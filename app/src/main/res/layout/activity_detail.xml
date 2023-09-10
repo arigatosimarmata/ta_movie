@@ -45,4 +45,6 @@
 
     <include layout="@layout/content_detail" />
 
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

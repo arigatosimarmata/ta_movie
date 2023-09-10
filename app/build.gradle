@@ -60,4 +60,6 @@ dependencies {
     //youtube player
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.28'
+
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
 }

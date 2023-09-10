@@ -3,6 +3,7 @@ package com.example.tamovie.retrofit
 import com.example.tamovie.model.DetailResponse
 import com.example.tamovie.model.MovieResponse
 import com.example.tamovie.model.TrailerResponse
+import com.example.tamovie.model.UserReviewResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -32,4 +33,10 @@ interface ApiEndpoint {
         @Path("movie_id") movie_id:Int,
         @Query("api_key") api_key:String,
     ): Call<TrailerResponse>
+
+    @GET("movie/{movie_id}/reviews")
+    fun getUserReview(
+        @Path("movie_id") movie_id: Int,
+        @Query("api_key") api_key: String,
+    ): Call<UserReviewResponse>
 }

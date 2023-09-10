@@ -40,8 +40,8 @@ class TrailerActivity : AppCompatActivity() {
     }
 
     private fun setupView(){
-        supportActionBar!!.title = Constant.MOVIE_TITLE
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = Constant.MOVIE_TITLE
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val youTubePlayerView = findViewById<YouTubePlayerView>(R.id.youtube_player_view)
         lifecycle.addObserver(youTubePlayerView)
